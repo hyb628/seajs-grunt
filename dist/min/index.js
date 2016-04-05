@@ -1,0 +1,1 @@
+define("index",["./util/util"],function(a,b,c){var d=a("./util/util");d.add(2)}),define("util/util",[],function(a,b,c){b.add=function(a,b){return a+b}});
