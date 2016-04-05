@@ -6,11 +6,11 @@
 
 两个Grunt插件：
 
-grunt-cmd-transport：将Seajs模块转换为Modules/Transport规范。
+`grunt-cmd-transport`：将Seajs模块转换为Modules/Transport规范。
 
-grunt-contrib-concat：合并模块。在合并模块前一定要先转换为Modules/Transport规范的模块。
+`grunt-contrib-concat`：合并模块。在合并模块前一定要先转换为Modules/Transport规范的模块。
 
-grunt-contrib-uglify: 压缩JS
+`grunt-contrib-uglify`: 压缩JS
 
 初始代码
 
@@ -30,11 +30,12 @@ index.js
             var util = require('./util/util')
             var result = util.add(1+1)
         })
-要做到的目标就是合并+压缩。但是因为SesJS的一些规则，是不能直接合并的，需要先转换为符合Modules/Transport规范的模块。
+要做到的目标就是合并+压缩。但是因为SesJS的一些规则，是不能直接合并的，需要先转换为符合`Modules/Transport`规范的模块。
 
 将SesJS模块转换为Modules/Transport规范的模块。
 
-安装grunt-cmd-transport ： npm install grunt-cmd-transport --save-dev
+安装`grunt-cmd-transport` ： 
+        npm install grunt-cmd-transport --save-dev
 
 Gruntfile.js中的配置
 
@@ -85,7 +86,7 @@ index.js和util.js中模块的id和seajs的config中的base组合后就是这个
 
 合并util.js和index.js
 
-安装grunt-contrib-concat。
+安装`grunt-contrib-concat`。
 
         npm install grunt-contrib-concat --save-dev
 
@@ -141,7 +142,7 @@ index.js
         });
 压缩
 
-安装grunt-contrib-uglify。
+安`~grunt-contrib-uglify`。
 
         npm install grunt-contrib-uglify --save-dev
 
@@ -191,5 +192,5 @@ Gruntfile.js配置（接着上面继续配置）
 运行成功后结果如下：
 
         define("index",["./util/util"],function(a){var b=a("./util/util"),c=b.add(1,2);console.log(c)}),define("util/util",[],function(a,b){b.add=function(a,b){return a+b}});
-        
+
 嗯，好了，完成了！就是这样的简单。
