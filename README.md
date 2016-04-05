@@ -1,10 +1,10 @@
 # 用Gruntjs构建Seajs项目
 
-准备工作
+####准备工作
 
 构建工具使用Grunt，不熟悉的先移步Grunt新手上路。
 
-两个Grunt插件：
+####两个Grunt插件：
 
 `grunt-cmd-transport`：将Seajs模块转换为Modules/Transport规范。
 
@@ -12,7 +12,7 @@
 
 `grunt-contrib-uglify`: 压缩JS
 
-初始代码
+####初始代码
 
 项目目录下有build,dist,src目录，build存放构建的中间文件，dist存放最终发布的文件，src就是源码目录。
 
@@ -84,7 +84,7 @@ index.js
         });
 index.js和util.js中模块的id和seajs的config中的base组合后就是这个文件的URL，也就是seajs中默认的模块ID。
 
-合并util.js和index.js
+####合并util.js和index.js
 
 安装`grunt-contrib-concat`。
 
@@ -140,9 +140,9 @@ index.js
                 return a + b;
             };
         });
-压缩
+####压缩
 
-安`~grunt-contrib-uglify`。
+安装`grunt-contrib-uglify`。
 
         npm install grunt-contrib-uglify --save-dev
 
