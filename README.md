@@ -8,7 +8,7 @@
 
 grunt-cmd-transport：将Seajs模块转换为Modules/Transport规范。
 
-grunt-cmd-concat：合并模块。在合并模块前一定要先转换为Modules/Transport规范的模块。
+grunt-contrib-concat：合并模块。在合并模块前一定要先转换为Modules/Transport规范的模块。
 
 grunt-contrib-uglify: 压缩JS
 
