@@ -2,7 +2,7 @@
 
 ####准备工作
 
-构建工具使用Grunt，不熟悉的先移步Grunt新手上路。
+构建工具使用Grunt，不熟悉的先移步[Grunt新手上路](http://www.gruntjs.net/getting-started)。
 
 ####两个Grunt插件：
 
