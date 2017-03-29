@@ -1,5 +1,7 @@
 # 用Gruntjs构建Seajs项目
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hyb628/seajs-grunt.svg)](https://greenkeeper.io/)
+
 ####准备工作
 
 构建工具使用Grunt，不熟悉的先移步[Grunt新手上路](http://www.gruntjs.net/getting-started)。
